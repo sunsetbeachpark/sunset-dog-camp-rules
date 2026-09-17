@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SUNSET DOG CAMP 2026 車中泊 ご利用上の注意事項">
+  <meta name="theme-color" content="#123a52">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23123a52'/%3E%3Cpath d='M7 42h50v7H7z' fill='%23f47a2a'/%3E%3Cpath d='M15 39l5-13h25l7 13z' fill='%23fff7e8'/%3E%3Ccircle cx='23' cy='44' r='6' fill='%23123a52' stroke='%23fff7e8' stroke-width='3'/%3E%3Ccircle cx='45' cy='44' r='6' fill='%23123a52' stroke='%23fff7e8' stroke-width='3'/%3E%3C/svg%3E">
+  <title>SUNSET DOG CAMP｜車中泊 ご利用上の注意事項</title>
+  <style>
+    :root {
+      --navy:#123a52;
+      --navy-deep:#082b40;
+      --orange:#f47a2a;
+      --cream:#fff7e8;
+      --paper:#ffffff;
+      --ink:#24313a;
+      --muted:#68757d;
+      --line:#dce3e7;
+      --soft:#f2f6f7;
+      --danger:#b6492f;
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      margin:0;
+      color:var(--ink);
+      background:#edf2f3;
+      font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","Meiryo",sans-serif;
+      font-size:16px;
+      line-height:1.85;
+    }
+    a { color:inherit; }
+    .hero {
+      position:relative;
+      overflow:hidden;
+      color:white;
+      padding:58px 20px 72px;
+      background:
+        radial-gradient(circle at 82% 20%,rgba(244,122,42,.55),transparent 24%),
+        linear-gradient(145deg,var(--navy-deep),var(--navy));
+    }
+    .hero::after {
+      content:"";
+      position:absolute;
+      left:-8%; right:-8%; bottom:-54px;
+      height:100px;
+      border-radius:50% 50% 0 0;
+      background:#edf2f3;
+    }
+    .hero-inner { position:relative; z-index:1; width:min(900px,100%); margin:auto; }
+    .eyebrow { color:#ffc490; font-size:.8rem; font-weight:800; letter-spacing:.16em; }
+    h1 { margin:.5rem 0 .8rem; font-size:clamp(2rem,7vw,3.5rem); line-height:1.2; letter-spacing:.02em; }
+    .hero p { max-width:620px; margin:0; color:#e9f0f3; }
+    main { width:min(900px,calc(100% - 28px)); margin:-28px auto 56px; position:relative; z-index:2; }
+    .summary {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:1px;
+      overflow:hidden;
+      margin-bottom:16px;
+      background:var(--line);
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:0 12px 35px rgba(8,43,64,.10);
+    }
+    .summary div { min-height:118px; padding:19px 18px; background:var(--paper); }
+    .summary small { display:block; margin-bottom:7px; color:var(--muted); font-weight:700; }
+    .summary strong { display:block; color:var(--navy); font-size:1.03rem; line-height:1.5; }
+    .summary .price strong { color:var(--orange); font-size:1.4rem; }
+    nav { display:flex; gap:8px; overflow-x:auto; padding:4px 0 18px; scrollbar-width:none; }
+    nav::-webkit-scrollbar { display:none; }
+    nav a { flex:none; padding:8px 13px; color:var(--navy); background:white; border:1px solid #cfdbdf; border-radius:999px; font-size:.88rem; font-weight:700; text-decoration:none; }
+    .card {
+      margin:0 0 14px;
+      padding:28px;
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:0 5px 18px rgba(8,43,64,.045);
+      scroll-margin-top:12px;
+    }
+    h2 { display:flex; gap:10px; align-items:center; margin:0 0 15px; color:var(--navy); font-size:1.3rem; line-height:1.45; }
+    h2::before { content:""; width:6px; height:1.25em; flex:none; border-radius:99px; background:var(--orange); }
+    h3 { margin:22px 0 8px; color:var(--navy); font-size:1.02rem; }
+    p { margin:.45rem 0; }
+    ul { margin:.6rem 0; padding-left:1.35rem; }
+    li + li { margin-top:.35rem; }
+    .important { margin:16px 0 4px; padding:16px 18px; background:#fff0e6; border-left:5px solid var(--orange); border-radius:0 12px 12px 0; }
+    .danger { background:#fff1ed; border-left-color:var(--danger); }
+    .specs { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin:14px 0; }
+    .specs div { padding:15px; text-align:center; background:var(--soft); border-radius:12px; }
+    .specs small { display:block; color:var(--muted); }
+    .specs strong { display:block; color:var(--navy); font-size:1.15rem; }
+    .closing { color:white; text-align:center; background:linear-gradient(140deg,var(--navy-deep),var(--navy)); }
+    .closing h2 { justify-content:center; color:white; }
+    .closing h2::before { display:none; }
+    footer { padding:0 20px 42px; color:var(--muted); text-align:center; font-size:.85rem; }
+    @media (max-width:720px) {
+      .summary { grid-template-columns:1fr 1fr; }
+      .summary div { min-height:106px; }
+    }
+    @media (max-width:480px) {
+      .hero { padding-top:44px; }
+      main { width:min(100% - 20px,900px); }
+      .summary { grid-template-columns:1fr; }
+      .summary div { min-height:auto; padding:16px 18px; }
+      .card { padding:22px 19px; border-radius:15px; }
+      .specs { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">SUNSET DOG CAMP 2026</div>
+      <h1>車中泊<br>ご利用上の注意事項</h1>
+      <p>安全で心地よい時間をお過ごしいただくため、お申し込み前に必ずご確認ください。</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="summary" aria-label="利用概要">
+      <div><small>チェックイン</small><strong>10月17日（土）<br>11:00〜20:00</strong></div>
+      <div><small>チェックアウト</small><strong>10月18日（日）<br>10:00〜15:00</strong></div>
+      <div class="price"><small>1区画・1泊</small><strong>5,500円</strong></div>
+      <div><small>募集予定</small><strong>20区画<br>6m × 8m</strong></div>
+    </section>
+
+    <nav aria-label="ページ内メニュー">
+      <a href="#vehicle">車両・区画</a>
+      <a href="#movement">入出庫</a>
+      <a href="#fire">焚き火・飲食</a>
+      <a href="#quiet">騒音・消灯</a>
+      <a href="#facility">設備・水道</a>
+      <a href="#dog">愛犬</a>
+      <a href="#safety">安全・天候</a>
+    </nav>
+
+    <section class="card" id="overview">
+      <h2>開催・お申し込み</h2>
+      <p>開催日は2026年10月17日（土）〜18日（日）です。車中泊のお申し込みはMicrosoft Formsよりお願いいたします。</p>
+      <p>募集数は20区画を予定しています。定員に達し次第、受付を終了します。</p>
+      <div class="important"><strong>20:00以降のチェックインは原則できません。</strong> 利用者都合のキャンセルには、別途定めるキャンセルポリシーが適用されます。</div>
+    </section>
+
+    <section class="card" id="vehicle">
+      <h2>車両・区画について</h2>
+      <p>1区画につき車両1台までです。車両、テント、タープ、サイドオーニング、テーブル、椅子等は、すべて6m × 8mの区画内に収めてください。</p>
+      <div class="specs">
+        <div><small>全長</small><strong>5.3mまで</strong></div>
+        <div><small>車高</small><strong>3.3mまで</strong></div>
+        <div><small>車幅</small><strong>区画内に収まること</strong></div>
+      </div>
+      <ul>
+        <li>キャンピングトレーラーおよび牽引車は利用できません。</li>
+        <li>通路や隣接区画へのはみ出しは禁止です。</li>
+        <li>区画内でのテント・タープ設営、芝生へのペグ打ちは可能です。</li>
+        <li>植物、立木、植栽にロープやハンモック等を結ぶ行為は禁止です。</li>
+        <li>ジャッキ、レベラー、スタビライザー等には、芝生保護用の敷板・保護マットを必ず使用してください。</li>
+      </ul>
+    </section>
+
+    <section class="card" id="movement">
+      <h2>車両の入出庫・移動</h2>
+      <p>チェックイン後の途中退出・再入場は原則できません。チェックアウトによる退出は、18日（日）10:00〜15:00の間にお願いいたします。</p>
+      <ul>
+        <li>緊急時またはスタッフが必要と判断した場合のみ、案内に従って移動できます。</li>
+        <li>23:00〜翌6:00は正門ゲートが閉鎖され、車両の入出庫はできません。</li>
+        <li>場内は最徐行とし、急発進・急ブレーキ・急ハンドルはお控えください。</li>
+        <li>芝生保護のため、駐車した状態での据え切りはお控えください。</li>
+        <li>駐車中は必ずエンジンを停止してください。アイドリングは禁止です。</li>
+      </ul>
+    </section>
+
+    <section class="card" id="fire">
+      <h2>焚き火・飲食について</h2>
+      <div class="important danger"><strong>直火・花火・会場内での調理は禁止です。</strong></div>
+      <p>持参した薪を使用し、焚き火台と防火シートを設置した場合に限り、区画内で焚き火ができます。芝生を焦がしたり傷つけたりしないよう十分ご注意ください。</p>
+      <ul>
+        <li>焚き火は21:00までとし、21:00までに完全に消火してください。</li>
+        <li>ガスコンロ、電気コンロ、石油ストーブは使用できますが、調理は禁止です。</li>
+        <li>車内・テント内での焚き火、ガス器具、石油ストーブ等の使用は禁止です。</li>
+        <li>食べ物・飲み物、調理済み食品の持ち込みと飲食は可能です。</li>
+        <li>飲酒は可能ですが、飲酒後の運転・車両移動は禁止です。</li>
+      </ul>
+      <p>猫やカラス等による被害を防ぐため、食材や食べ残しは密閉して管理してください。</p>
+    </section>
+
+    <section class="card" id="quiet">
+      <h2>騒音・消灯・禁煙</h2>
+      <ul>
+        <li>発電機、カラオケ、その他周囲の迷惑となる機器の使用は禁止です。</li>
+        <li>20:00以降は、スピーカーやオーディオ機器等による音出しを禁止します。</li>
+        <li>消灯時間は22:00です。以降は照明を消すか、必要最小限の光量にしてください。</li>
+        <li>深夜・早朝は、会話やドアの開閉音にも十分ご配慮ください。</li>
+        <li>園内は全面禁煙です。車中泊区画および車内を含め、喫煙できません。</li>
+      </ul>
+    </section>
+
+    <section class="card" id="facility">
+      <h2>設備・水道・ゴミ</h2>
+      <p>会場に電源、炊事場、Wi-Fi、コインランドリー、ダンプステーション、ゴミ捨て場、お風呂・シャワーはありません。施設の電源を許可なく使用することは禁止です。</p>
+      <h3>水道・トイレ</h3>
+      <p>トイレは園内の公衆トイレをご利用ください。水道は通常の手洗い・トイレ利用に伴う使用のみ可能です。</p>
+      <p>炊事、食器洗い、洗濯、車両や道具の洗浄、キャンピングカーのタンクへの給水は禁止です。飲料水・生活用水は各自でご持参ください。ブラックタンク・グレータンクの排水も禁止です。</p>
+      <h3>入浴</h3>
+      <p>近隣には「湯楽の里」があり、会場から車で約5分、自転車で約15分です。途中退出・再入場は原則できないため、チェックイン前などにご利用ください。</p>
+      <h3>ゴミ</h3>
+      <p>ゴミ、使用済みの炭・灰、愛犬の排泄物、その他の不要物は、すべて各自でお持ち帰りください。炭・灰は完全に消火したことを確認してください。</p>
+    </section>
+
+    <section class="card" id="dog">
+      <h2>愛犬をお連れのお客様へ</h2>
+      <ul>
+        <li>愛犬を車内に残したまま、飼い主様が車両や会場を離れることは禁止です。</li>
+        <li>車外へ連れ出す際は、必ずリードやロープ等でつないでください。</li>
+        <li>連れ歩き・排泄が可能な場所について、公園および施設の指定に従ってください。</li>
+        <li>排泄物は飼い主様が責任をもって処理し、必ず持ち帰ってください。</li>
+        <li>鳴き声、威嚇、その他周囲の迷惑となる行為が続く場合は、スタッフよりお声がけする場合があります。</li>
+        <li>犬同士のトラブル、愛犬による事故・けが等は、当事者間でご対応ください。</li>
+      </ul>
+    </section>
+
+    <section class="card" id="safety">
+      <h2>事故・天候・利用マナー</h2>
+      <p>場内で発生した車両の接触、故障、事故、けが、盗難、紛失等について、主催者は一切の責任を負いかねます。</p>
+      <p>自然物の落下、倒木、強風、雨、その他の自然災害による事故、けが、車両の損傷およびトラブルについても、主催者は責任を負いかねます。車両、貴重品、愛犬、荷物等は各自で管理してください。</p>
+      <h3>雨天・開催中止</h3>
+      <p>雨天の場合も開催します。強風、荒天、災害等により、安全な開催が困難と主催者が判断した場合は、内容変更または開催中止とする場合があります。主催者判断による中止の場合は、車中泊料金を返金します。</p>
+      <div class="important"><strong>スタッフ・管理者の案内や指示に従ってください。</strong> 安全かつ円滑な運営が困難と判断した場合は、ご退場または今後のご利用をお断りすることがあります。</div>
+    </section>
+
+    <section class="card closing">
+      <h2>皆さまへ</h2>
+      <p>SUNSET DOG CAMPを皆さまが安全かつ快適に楽しめるよう、ご理解とご協力をお願いいたします。</p>
+    </section>
+  </main>
+
+  <footer>© SUNSET DOG CAMP</footer>
+</body>
+</html>
